@@ -38,6 +38,10 @@ public class AnnotationConsumer {
         System.in.read();
     }
 
+    /***
+     *
+     *
+     */
     @Configuration
     @EnableDubbo(scanBasePackages = "com.alibaba.dubbo.examples.annotation.action", multipleConfig = true)
     @PropertySource("classpath:/com/alibaba/dubbo/examples/annotation/dubbo-consumer.properties")

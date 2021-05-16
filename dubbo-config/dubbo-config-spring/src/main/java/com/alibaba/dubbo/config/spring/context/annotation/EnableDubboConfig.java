@@ -65,14 +65,11 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
 @Documented
-@Import(DubboConfigConfigurationSelector.class)
+@Import(DubboConfigConfigurationSelector.class) //表明使用 DubboConfigConfigurationRegistrar 类进行导入。
 public @interface EnableDubboConfig {
 
     /**
-     * It indicates whether binding to multiple Spring Beans.
-     *
-     * @return the default value is <code>false</code>
-     * @revised 2.5.9
+     * 配置是否绑定到多个 Spring Bean 上
      */
     boolean multiple() default false;
 
